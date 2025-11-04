@@ -143,15 +143,11 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 405;
-  height: 72;
+  width: 470px;
+  height: 130px;
   opacity: 1;
   gap: 70px;
   padding: 24px 47px;
-  width: 405;
-  height: 72;
-  opacity: 1;
-  gap: 70px;
 }
 .hero-img {
   position: relative;
@@ -232,7 +228,7 @@ center {
   left: 94px;
   opacity: 1;
   border-radius: 4px;
-  border-width: 1px;
+  /* border-width: 1px; */
   border: 50px solid
     (134.83deg, rgba(197, 34, 228, 0.71) 0%, rgba(90, 25, 244, 0.72) 96.35%);
 }
@@ -250,11 +246,39 @@ center {
   flex-direction: column;
   gap: 16px;
 }
+.cocon {
+  width: 92px;
+  height: 89px;
+  border-radius: 4px;
+  border-width: 1px;
+  background: url("./img/card-img4.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cocon h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: var(--whaite);
+  width: 100%;
+  height: 100%;
+  border-color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.35);
+  /* display: flex;
+justify-content: center;
+align-items: center; */
+}
 .top-text h4 {
   font-weight: 600;
   font-size: 20px;
   line-height: 100%;
   letter-spacing: 0%;
+  padding: 24px;
   color: var(--whaite);
 }
 .top-text p {
@@ -262,15 +286,23 @@ center {
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0%;
+  padding: 12px;
   color: rgba(215, 215, 215, 1);
 }
-
-.seller{
+#seller {
+  padding: 117px;
+}
+.seller {
   display: flex;
+  /* justify-content: space-between; */
   justify-content: center;
   flex-wrap: wrap;
-  gap: 36px;
+  gap: 86px;
   padding: 56px;
+}
+.seller :hover {
+  color: #641de6;
+  background-color: #9725d6;
 }
 
 .seller-card {
@@ -286,6 +318,7 @@ center {
   padding: 24px;
   background-color: rgba(217, 217, 217, 0.08);
 }
+
 .seller-car {
   display: flex;
   align-items: center;
@@ -297,7 +330,7 @@ center {
   border-radius: 4px;
   gap: 10px;
   padding: 24px;
-  background-color:rgb(116, 29, 198);
+  background-color: rgb(116, 29, 198);
 }
 .seller-text h5 {
   font-weight: 600;
@@ -318,7 +351,7 @@ center {
 /* hero */
 
 .footer {
-    background-color: rgba(6, 10, 22, 1);
+  background-color: rgba(6, 10, 22, 1);
   padding: 60px 5% 40px;
 }
 
@@ -342,11 +375,11 @@ center {
 .footer-column p {
   font-size: 0.9rem;
   margin-bottom: 20px;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-letter-spacing: 0%;
-color: rgba(215, 215, 215, 1);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: rgba(215, 215, 215, 1);
 }
 
 .footer-column ul {
@@ -356,50 +389,50 @@ color: rgba(215, 215, 215, 1);
 .footer-column ul li {
   margin-bottom: 10px;
 }
-.footer-text h4{
-font-weight: 700;
-font-size: 24px;
-line-height: 100%;
-letter-spacing: 0%;
-color: var(--whaite);
+.footer-text h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: var(--whaite);
 }
-.footer-text ul{
+.footer-text ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 24px;
   list-style: none;
 }
-.footer-text a{
-font-weight: 400;
-font-size: 16px;
-line-height: 100%;
-letter-spacing: 0%;
-text-decoration: none;
-color: rgba(215, 215, 215, 1);
+.footer-text a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-decoration: none;
+  color: rgba(215, 215, 215, 1);
 }
 
 .social-links a {
   margin-right: 15px;
   font-size: 1.2rem;
   list-style: none;
-  text-decoration: ;
 }
 
 .subscribe-form {
   display: flex;
-  background-color: var(--card-background);
+  background-color: rgba(6, 10, 22, 1);
   border-radius: 8px;
   overflow: hidden;
   padding: 5px;
 }
 
 .subscribe-form input {
-font-weight: 400;
-font-size: 14px;
-line-height: 100%;
-letter-spacing: 0%;
-background-color:#ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  background-color: rgba(6, 10, 22, 1);
+  border: 1px solid #ffffff;
 }
 
 .subscribe-form button {
@@ -409,8 +442,8 @@ background-color:#ffffff;
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
+  border: none;
 }
-
 
 @media (max-width: 880px) {
   .header nav {
@@ -428,7 +461,7 @@ background-color:#ffffff;
     flex-direction: column;
     justify-content: center;
   }
-  .footer-content{
+  .footer-content {
     display: flex;
     flex-direction: column;
   }
